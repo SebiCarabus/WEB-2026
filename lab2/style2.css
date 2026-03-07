@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset{
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    padding: 10px;
+}
+
+table tr>td:first-child{
+    text-align: right;
+}

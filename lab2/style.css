@@ -1,0 +1,110 @@
+body {
+    margin : 10 auto;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1 {
+   background-color:aqua;
+   border: 0px solid black;
+   border-radius: 5px;
+   text-align: center;
+}
+
+h2{
+    color: gray;
+}
+
+#echipe>table>caption{
+    margin-bottom: 10px;
+}
+
+#echipe>table{
+    border:2px solid black;
+    width: 500px;
+    border-collapse: collapse;
+}
+#echipe>table tr:nth-child(2n){
+    background-color:aqua;
+}
+#echipe>table thead{
+    background-color: slategray;
+    text-align: left;
+}
+#echipe>table th,#echipe>table td{
+   border: 2px solid black; padding: 10px
+}
+#adauga_eroare table{
+    width: 500px;
+}
+#adauga_eroare table>colgroup>col:first-child{
+    width: 80px;
+}
+#adauga_eroare table tr>td:first-child{
+    text-align: right;
+}
+#adauga_eroare legend{
+    color: brown;
+}
+#adauga_eroare fieldset{
+    border: 2px solid brown;
+    width: 500px;
+}
+#adauga_eroare input[type="submit"]{
+    background-color: slategray;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#adauga_eroare input[type="submit"]:hover{
+    background-color: rgb(93, 107, 120);
+}
+#adauga_eroare input[type="text"]{
+    border-radius: 5px;
+}
+#adauga_eroare textarea{
+    border-radius: 5px;
+    width: 400px;
+    max-width: 400px;
+    min-width: 200px;
+    height: 150px;
+    min-height: 100px;
+    max-height: 150px;
+}
+#adauga_eroare tbody tr:nth-child(2)>td{
+    vertical-align: top;
+}
+#erori h3{
+    color: brown;
+}
+#erori h3::before{
+    content: "💥 ";
+}
+#erori > div {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+#erori > div:hover {
+   box-shadow: 7px 7px 15px gray;
+}
+.subtitlu {
+   
+   
+}
+
+section {
+   /* specificati padding */   
+}
+
+/* reguli pentru stilizarea tabelului cu persoanele din echipa */
+
+/*reguli pentru stilizarea informatiilor despre fiecare eroare */
+section.eroare {
+    /* utilizati box-shadow si border-radius */
+}
+
+
+/* reguli pentru stilizarea elementelor specifice formularului */
+
+/* reguli pentru stilizarea elementelor din tabelul care organizeaza elementele formularului */
