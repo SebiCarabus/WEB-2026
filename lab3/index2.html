@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 25% 1fr 25%;
+            grid-template-rows: 80px 1fr 1fr 40px;
+            height: 600px;
+            width: 80vw;
+            grid-template-areas: 
+            'h h h'
+            'n m a'
+            'n m b'
+            'f f f';
+        }
+        #header{
+            grid-area: h;
+            background-color: brown;
+        }
+        #footer{
+            grid-area: f;
+            background-color: brown;
+        }
+        #nav{
+            grid-area: n;
+            background-color: bisque;
+        }
+        #main{
+            grid-area: m;
+            background-color: rgb(35, 86, 87);
+        }
+        #side1{
+            grid-area: a;
+             background-color: bisque;
+        }
+        #side2{
+            grid-area: b;
+             background-color:cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="nav">Meniu Navigate</div>
+        <div id="main">Main Content</div>
+        <div id="side1">Aside Element</div>
+        <div id="side2">Another Side Information</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
