@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset{
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    padding: 10px;
+}
+
+.login_table{
+    display: flex;
+    flex-direction: column;
+}
+.login_table>*{
+    margin-bottom: 5px;
+}
+.login_table>input[type="submit"]{
+    background-color: slategray;
+    border-radius: 5px;
+    border: 0px solid black;
+    padding: 5px;
+}
+
+.login_table>input[type="submit"]:hover{
+    background-color: rgb(93, 107, 120);
+}
