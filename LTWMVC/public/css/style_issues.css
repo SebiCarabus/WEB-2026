@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin : 10 auto;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1 {
+   background-color:aqua;
+   border: 0px solid black;
+   border-radius: 5px;
+   text-align: center;
+}
+main > *{
+    margin:10px;
+    width: 90vw;
+}
+main > p{
+    margin-bottom: 30px;
+}
+
+
+h2{
+    color: gray;
+}
+
+#echipe>div:first-child{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.grid_table{
+    display: grid;
+    border:2px solid black;
+    width: 100%;
+    max-width: 500px;
+    grid-template-columns: 50px 1fr 1fr;
+}
+.grid_table_header{
+    font-weight: bold;
+    padding: 10px;
+    background-color: slategray;
+    border: 1px solid black;
+}
+.grid_table_simple{
+    padding: 10px;
+    border: 1px solid black;
+}
+.aqua{
+    background-color:aqua;
+}
+#adauga_eroare,#echipe,#erori,main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#adauga_eroare form{
+    width: 100%;
+    max-width: 500px;
+}
+#adauga_eroare legend{
+    color: brown;
+}
+#adauga_eroare input[type="submit"]{
+    background-color: slategray;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#adauga_eroare input[type="submit"]:hover{
+    background-color: rgb(93, 107, 120);
+}
+#adauga_eroare input[type="text"]{
+    border-radius: 5px;
+    grid-column: span 2;
+}
+#adauga_eroare textarea{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    min-height: 100px;
+    max-height: 150px;
+    grid-column: span 2;
+}
+#adauga_eroare > form{
+    width: 100%;
+    max-width: 500px;
+}
+#adauga_eroare > form:last-child{
+    display: flex;
+    justify-content: center;
+}
+#adauga_eroare fieldset{
+    border: 1px solid brown;
+}
+.table_add_error{
+    display: grid;
+    grid-template-columns: 90px 100px 1fr;
+    width: 100%;
+    max-width: 500px;
+}
+.table_add_error>*{
+    margin:5px;
+}
+.table_add_error>label{
+    text-align: right;
+}
+#erori>h2{
+    width: 90vw;
+}
+#erori h3{
+    color: brown;
+}
+#erori h3::before{
+    content: "💥 ";
+}
+#erori > div {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px gray;
+    width: 90vw;
+}
+#erori > div:hover {
+   box-shadow: 7px 7px 15px gray;
+}
+#erori p{
+    overflow: break-word;
+    word-break: break-word;
+}
